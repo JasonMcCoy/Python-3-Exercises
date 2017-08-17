@@ -100,39 +100,39 @@ total = 10
 
 #03-02.py
 total = 10
-print (total)
+print(total)
 
 
 
 #03-03.py
 total = 10
-print (total)
-print (type (total))
+print(total)
+print(type(total))
 
 
 
 #03-04.py
-print (2 + 4)
-print (6 - 4)
-print (6 * 3)
-print (6 / 3)
-print (6 % 3)
-print (6 // 3) # floor division: always truncates fractional remainders
-print (-5)
-print (3**2)   # three to the power of 2
+print(2 + 4)
+print(6 - 4)
+print(6 * 3)
+print(6 / 3)
+print(6 % 3)
+print(6 // 3) # floor division: always truncates fractional remainders
+print(-5)
+print(3**2)   # three to the power of 2
 
 
 
 
 #03-05.py
-print (2.0 + 4.0)
-print (6.0 - 4.0)
-print (6.0 * 3.0)
-print (6.0 / 3.0)
-print (6.0 % 3.0)
-print (6.0 // 3.0) # floor division: always truncates fractional remainders
-print (-5.0)
-print (3.0**2.0)   # three to the power of 2
+print(2.0 + 4.0)
+print(6.0 - 4.0)
+print(6.0 * 3.0)
+print(6.0 / 3.0)
+print(6.0 % 3.0)
+print(6.0 // 3.0) # floor division: always truncates fractional remainders
+print(-5.0)
+print(3.0**2.0)   # three to the power of 2
 
 
 
@@ -142,14 +142,14 @@ print (3.0**2.0)   # three to the power of 2
 # mixed type expressions are "converted up"
 # converted up means to take the data type with the greater storage
 # float has greater storage (8 bytes) than a regular int (4 bytes)
-print (2 + 4.0)
-print (6 - 4.0)
-print (6 * 3.0)
-print (6 / 3.0)
-print (6 % 3.0)
-print (6 // 3.0) # floor division: always truncates fractional remainders
-print (-5.0)
-print (3**2.0)   # three to the power of 2
+print(2 + 4.0)
+print(6 - 4.0)
+print(6 * 3.0)
+print(6 / 3.0)
+print(6 % 3.0)
+print(6 // 3.0) # floor division: always truncates fractional remainders
+print(-5.0)
+print(3**2.0)   # three to the power of 2
 
 
 
@@ -162,12 +162,12 @@ print (3**2.0)   # three to the power of 2
 # true or false
 # Note that Python stores true as integer 1, and false as integer 0
 # but outputs 'true' or 'false' from print statements
-print (7 > 10)
-print (4 < 16)
-print (4 == 4)
-print (4 <= 4)
-print (4 >= 4)
-print (4 != 4)
+print(7 > 10)
+print(4 < 16)
+print(4 == 4)
+print(4 <= 4)
+print(4 >= 4)
+print(4 != 4)
 
 
 
@@ -175,10 +175,10 @@ print (4 != 4)
 #03-08.py
 
 # these are string objects
-print ("Hello out there")
-print ('Hello')
-print ("Where's the spam?")
-print ('x')
+print("Hello out there")
+print("Hello")
+print("Where's the spam?")
+print("x")
 
 
 
@@ -186,22 +186,22 @@ print ('x')
 
 # these are string assignments
 a = "Hello out there"
-print (a)
-b = 'Hello'
-print (b)
+print(a)
+b = "Hello"
+print(b)
 c = "Where's the spam?"
-print (c)
-d = 'x'
-print (d)
+print(c)
+d = "x"
+print(d)
 
 
 
 #03-10.py
 
-a = 'Hello out there'
+a = "Hello out there"
 b = "Where's the spam?"
 c = a + b
-print (c)
+print(c)
 
 
 
@@ -209,15 +209,15 @@ print (c)
 
 #03-11.py
 
-a = 'Hello out there'
+a = "Hello out there"
 b = "Where's the spam?"
 c = a + b
-print (c)
+print(c)
 #d = c + 10
 # you cannot concatenate a string and an integer
 # you must convert the integer to a string first:
 d = c + str(10)
-print (d)
+print(d)
 
 
 
@@ -226,13 +226,14 @@ print (d)
 #03-12.py
 
 a = "10"
-b = '99'
+b = "99"
 c = a + b
-print (c)
-print (type(c))
+print(c)
+print(type(c))
+
 c = int(c)
-print (c)
-print (type(c))
+print(c)
+print(type(c))
 
 
 
@@ -244,13 +245,14 @@ print (type(c))
 # Updated: Monday 24th January 2011, 16:24 PT, AD
 
 x = 1.6
-print (x)
+print(x)
+
 x = round(x)
 print (x)
 #compare the above with
 x = 1.6
 x = int(x)
-print (x)
+print(x)
 
 
 
@@ -270,22 +272,26 @@ print (x)
 #              input values, but has not been modified to work in all cases.
 ###########################################################################
 
-# Updated: Monday 21st February 2011, 5:56 PT, AD
+# Updated by Jason McCoy: Thursday 17th August 2017, 4:35 PST
 
 number = 1234.5678
-print (number)
-number = round(number,2)
-print (number)
+print(number)
+
+number = round(number, 2)
+print(number)
 # the above line rounds the number to 2 decimal places
 
 thousands = number / 1000
-print (thousands)
+print(thousands)
+
 thousands = int(thousands)
-print (thousands)
+print(thousands)
+
 remainder = number % 1000
-print (remainder)
+print(remainder)
+
 pretty_output = "$" + str(thousands) + "," + str(remainder)
-print (pretty_output)
+print(pretty_output)
 
 
 
@@ -300,7 +306,7 @@ print (pretty_output)
 #  Date:       Monday 27th September 2004, 12:43 PT
 
 number1 = input("Enter first number:\n")
-print (number1, type(number1))
+print(number1, type(number1))
 
 
 #  File:       04-02.py
