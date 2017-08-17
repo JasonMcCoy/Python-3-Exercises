@@ -1,68 +1,3 @@
-# Python3Programs.txt
-# Refresh webpage for latest version of this file!
-# anne.dawson@gmail.com
-# Last updated: Sunday 8th January 2017, 13:13 PT, AD
-# Note to AD: update this file then copy to Python3Programs.html
-
-# Please Note: lines starting with a # are comments 
-# and are ignored by
-# the Python interpreter...
-
-# See:
-# http://www.annedawson.net/PythonComments.txt
-# for important comments about comments.
-
-# Any of these example programs can be run by
-# directly copying the desired program and pasting 
-# the code to a Python editor such as IDLE...
-# http://www.annedawson.net/Python_Program_Run.htm
-
-# The first Python program (01-01.py) has only
-# one executable line: 
-# print ("Hello World!")
-# and one comment line
-
-# A selection of these example programs are used in courses
-# CSCI100, CSCI120, CSCI165 and BUSI237
-
-
-#################################################
-# NOTE: These example programs run on Python 3. #
-#################################################
-
-
-
-# see http://www.annedawson.net/PythonPrograms.html for examples written for Python 2.x
-
-# All Computer Science courses at Coquitlam College now use Python 3
-
-
-#################################
-# READ THE FOLLOWING PARAGRAPH...
-
-# Be aware that there are some significant differences between Python 3
-# and earlier versions. For beginner Python programmers, the main ones
-# are that the print statement of Python 2.x is now a print function in Python 3,
-# (brackets are required after the word print (see program 01-01 below)
-# the raw_input function in Python 2.x is replaced by the input function in Python 3,
-# and an integer division such as 2/3 in Python 2.x is now a real division
-# in Python 3. 
-
-# For experienced programmers, also check out 
-# the range() and string formatting differences outlined here:
-# http://inventwithpython.com/appendixa.html
-
-# For experienced programmers, also check out 
-# IDLE's debugging tools at:
-# http://inventwithpython.com/chapter7.html
-
-##############################################################################################
-
-# NOTE FOR USERS OF THIS FILE - all programs shown in this file have been tested with Python 3
-
-##############################################################################################
-
-
 #01-01.py
 
 print ("Hello World!")
@@ -71,39 +6,43 @@ print ("Hello World!")
 #01-02.py
 
 thetext = input("Enter some text ")
-print ("This is what you entered:")
-print (thetext)
+print("This is what you entered:")
+print(thetext)
 
 
 #01-03.py
 
 # Note that \n within quote marks forces a new line to be printed
 thetext = input("Enter some text\n")
-print ("This is what you entered:")
-print (thetext)
+print("This is what you entered:")
+print(thetext)
 
 
 #01-04.py
 
-prompt  = "Enter a some text "
+prompt = "Enter a some text "
 thetext = input(prompt)
-print ("This is what you entered:")
-print (thetext)
-
+print("This is what you entered:")
+print(thetext)
 
 
 
 #02-01.py
 
 total = 0.0
-number1=float(input("Enter the first number: "))
-total = total + number1
-number2=float(input("Enter the second number: "))
-total = total + number2
-number3=float(input("Enter the third number: "))
-total = total + number3
+
+number1 = float(input("Enter the first number: "))
+total += number1
+
+number2 = float(input("Enter the second number: "))
+total += number2
+
+number3 = float(input("Enter the third number: "))
+total += number3
+
 average = total / 3
-print ("The average is " + str(average))
+
+print("The average is " + str(average))
 
 
 
@@ -115,7 +54,7 @@ print ("The average is " + str(average))
 # Purpose: to demonstrate storage of a floating point number   #
 #                                                              #
 # Programmer: Anne Dawson                                      #
-# Last updated: Sunday 21st March 2010, 12:45 PT               #
+# Updated by Jason McCoy: Thursday 18th August 2017, 2:12 PST  #
 #                                                              #
 # See this resource to find out how the input function works:  #
 # http://www.annedawson.net/Python3_Input.txt                  #
@@ -124,13 +63,14 @@ print ("The average is " + str(average))
 # http://www.annedawson.net/PythonComments.txt                 #
 #                                                              #
 ################################################################
-number1=float(input("Enter the first number: "))
-number2=float(input("Enter the second number: "))
-number3=float(input("Enter the third number: "))
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+number3 = float(input("Enter the third number: "))
+
 total = number1 + number2 + number3
+
 average = total / 3
-print ("The average is: ")
-print (average)
+print("The average is: " + str(average))
 
 
 
@@ -142,12 +82,14 @@ print (average)
 #02-03.py
 total = 0.0
 count = 0
+
 while count < 3:
-    number=float(input("Enter a number: "))
-    count = count + 1
-    total = total + number
+    number = float(input("Enter a number: "))
+    count += 1
+    total += number
+
 average = total / 3
-print ("The average is " + str(average))
+print("The average is " + str(average))
 
 
 
@@ -351,7 +293,7 @@ print (pretty_output)
 
 
 
-#  File:       04-01.py 
+#  File:       04-01.py
 #  Purpose:    Creating a string object
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -361,7 +303,7 @@ number1 = input("Enter first number:\n")
 print (number1, type(number1))
 
 
-#  File:       04-02.py 
+#  File:       04-02.py
 #  Purpose:    Converting one data type to another
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -376,7 +318,7 @@ print (number1, type(number1))
 
 
 
-#  File:       04-03.py 
+#  File:       04-03.py
 #  Purpose:    Displaying an object's memory location 
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -392,7 +334,7 @@ print (number1, type(number1), id(number1))
 
 
 
-#  File:       04-04.py 
+#  File:       04-04.py
 #  Purpose:    Examples of use of arithmetic operators
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -413,7 +355,7 @@ print (3**2)   # three to the power of 2
 
 
 
-#  File:       04-05.py 
+#  File:       04-05.py
 #  Purpose:    Examples of use of arithmetic operators with float values
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -435,7 +377,7 @@ print (3.0**2.0)   # three to the power of 2
 
 
 
-#  File:       04-06.py 
+#  File:       04-06.py
 #  Purpose:    Examples of use of arithmetic operators 
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -463,7 +405,7 @@ print (3**2.0)   # three to the power of 2
 
 
 
-#  File:       04-07.py 
+#  File:       04-07.py
 #  Purpose:    Examples of use of Boolean expressions
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -486,7 +428,7 @@ print (4 != 4)
 
 
 
-#  File:       04-08.py 
+#  File:       04-08.py
 #  Purpose:    Displaying boolean values
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -504,7 +446,7 @@ print (isPositive)
 
 
 
-#  File:       04-09.py 
+#  File:       04-09.py
 #  Purpose:    Combining boolean expressions with and
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -521,7 +463,7 @@ print ((age > 21) and (salary > 50000))
 
 
 
-#  File:       04-10.py 
+#  File:       04-10.py
 #  Purpose:    The if statement
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -775,7 +717,7 @@ have_own_car = input("Do you own your own car (y/n): ")
 
 if (age > 21) and (have_own_car == 'y'):
     print ("You are over 21 years old and own your own car")
-    
+
 if (age > 21) and (have_own_car == 'n'):
     print ("You are over 21 years old and you do NOT own your own car")
 
@@ -798,7 +740,6 @@ if (salary > 50000) or (age > 21):
     print ("you can join our club because you earn more than $50000 OR you are over 21 (or both)")
 else:
     print ("you need to be earning more than 50000 OR be over 21 (or both) to join our club")
-    
 
 
 
@@ -810,7 +751,8 @@ else:
 
 
 
-#  File:       05-01.py 
+
+#  File:       05-01.py
 #  Purpose:    Examples of while loops
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -837,7 +779,7 @@ print ('done')
 
 
 
-#  File:       05-02.py 
+#  File:       05-02.py
 #  Purpose:    Examples of while loops
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -863,7 +805,7 @@ print ('gone')
 
 
 
-#  File:       05-03.py 
+#  File:       05-03.py
 #  Purpose:    Examples of while loops - the infinite loop
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -890,7 +832,7 @@ print ('gone')
 
 
 
-#  File:       05-04.py 
+#  File:       05-04.py
 #  Purpose:    Examples of while loops - another infinite loop
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -916,7 +858,7 @@ print ('gone')
 
 
 
-#  File:       05-05.py 
+#  File:       05-05.py
 #  Purpose:    Example: use of break to end an infinite loop
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -940,7 +882,7 @@ print ('nice day!')
 
 
 
-#  File:       05-06.py 
+#  File:       05-06.py
 #  Purpose:    Example: use of continue in a loop
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -968,7 +910,7 @@ print ('nice day!')
 
 
 
-#  File:       05-07.py 
+#  File:       05-07.py
 #  Purpose:    Example: 'sentinel-controlled' while loop
 #              Calculates average score of a class
 #  Programmer: Anne Dawson
@@ -987,9 +929,9 @@ score = int( score )   # convert string to an integer
 while score != -9: # -9 is used as a sentinel ( a lookout or sentry value )
     totalScore = totalScore + score
     numberScores = numberScores + 1
-    score = input( "Enter score, (Enter -9 to end): " )  
+    score = input( "Enter score, (Enter -9 to end): " )
     score = int( score )
-   
+
 # termination phase
 if numberScores != 0: # division by zero would be a run-time error
    average = float( totalScore ) / numberScores
@@ -1007,13 +949,13 @@ else:
 
 
 
-#  File:       05-08.py 
+#  File:       05-08.py
 #  Purpose:    Example: the counter-controlled for loop
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Tuesday 5th October 2004, 6:53 PT
 
-for c in range (10):  
+for c in range (10):
     print (c)
 
 
@@ -1033,7 +975,7 @@ for c in range (10):
 #  Course:     CSCI120A, CSCI165
 #  Date:       Tuesday 5th October 2004, 6:58 PT
 
-for c in range (5,10):  
+for c in range (5,10):
     print (c)
 
 
@@ -1068,7 +1010,7 @@ for c in range (1,6):
 
 
 
-#  File:       05-11.py 
+#  File:       05-11.py
 #  Purpose:    Example: 'break' with the for loop
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1079,7 +1021,6 @@ for c in range (1,6):
         break
     print (c)
 
-    
 
 
 
@@ -1087,7 +1028,8 @@ for c in range (1,6):
 
 
 
-#  File:       05-12.py 
+
+#  File:       05-12.py
 #  Purpose:    Example: outputting strings and numbers
 #              in a single print statement
 #  Programmer: Anne Dawson
@@ -1110,7 +1052,7 @@ print ('Total is: ', d, 'dollars and', c, ' cents')
 
 
 
-#  File:       05-13.py 
+#  File:       05-13.py
 #  Purpose:    Example: outputting strings and numbers
 #              in a single print statement
 #              using string formatting.
@@ -1137,7 +1079,7 @@ print ('The sum of %0.2f and %0.2f is %0.2f' % (x, y, x + y))
 
 
 
-#  File:       05-14.py 
+#  File:       05-14.py
 #  Purpose:    Example: how to repeat a program at the user's request
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1155,7 +1097,7 @@ print ("Goodbye!")
 
 
 
-#  File:       05-15.py 
+#  File:       05-15.py
 #  Purpose:    Example: how to use a loop within a loop
 #              a nested while loop
 
@@ -1170,7 +1112,7 @@ x = 1
 while (x < 6):
     print () # prints a new line
     print ("x = " + str(x),) # the , forces printing of the next item
-                             # to be on the same line 
+                             # to be on the same line
     x = x + 1
     y = 1
     while (y < 6):
@@ -1188,8 +1130,8 @@ means that you can control 25 processes.
 
 
 
-        
-#  File:       05-16.py 
+
+#  File:       05-16.py
 #  Purpose:    Example: how to use a loop within a loop
 #              a nested while loop
 
@@ -1204,7 +1146,7 @@ x = 1
 while (x < 6):
     print() # prints a new line
     print ("x = " + str(x)) # the , forces printing of the next item
-                            # to be on the same line 
+                            # to be on the same line
     x = x + 1
     y = 1
     while (y < 6):
@@ -1221,7 +1163,7 @@ Notice that with a loop repeating 5 times,
 ***within*** a loop that repeats 5 times
 means that you can control 125 processes.
 '''
-        
+
 
 
 
@@ -1242,13 +1184,13 @@ print ("This is the start of the program")
 for i in range (1,6):
     for j in range (1,6):
         print ("i: " + str(i) + " j: " + str(j) )
-    print()        
+    print()
 '''
 Notice that with a loop repeating 5 times,
 ***within*** a loop that repeats 5 times
 means that you can control 25 processes.
 '''
-        
+
 
 
 
@@ -1270,14 +1212,14 @@ for i in range (1,6):
     for j in range (1,6):
         for k in range (1,6):
             print ("i: " + str(i) + " j: " + str(j) + " k: " + str(k))
-    print()        
+    print()
 '''
 Notice that with a loop repeating 5 times,
 ***within*** a loop that repeats 5 times
 ***within*** a loop that repeats 5 times
 means that you can control 125 processes.
 '''
-        
+
 
 
 
@@ -1307,7 +1249,7 @@ print (math.sqrt(x))
 
 
 
-#  File:       06-02.py 
+#  File:       06-02.py
 #  Purpose:    Example: using the dir function to list out the names
 #              of available functions in the math module
 #  Programmer: Anne Dawson
@@ -1323,7 +1265,7 @@ print (dir(math))
 
 
 
-#  File:       06-02B.py 
+#  File:       06-02B.py
 #  Purpose:    Example: showing functions which have no return statement
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1338,8 +1280,8 @@ def many_greetings(n):
 
 def many_greetings_with_name(n,the_name):
     for i in range(n):
-        print("Hello Again" + the_name + "!")  
-     
+        print("Hello Again" + the_name + "!")
+
 greeting()
 greeting()
 greeting()
@@ -1363,7 +1305,7 @@ many_greetings_with_name(x," Anne")
 
 
 
-#  File:       06-03.py 
+#  File:       06-03.py
 #  Purpose:    Example: using a programmer-defined function
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1387,7 +1329,7 @@ print ("last value of x is:",x)
 
 
 
-#  File:       06-04.py 
+#  File:       06-04.py
 #  Purpose:    Example: using two programmer-defined functions
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1406,12 +1348,12 @@ print()
 print()
 
 print ("1 to 5 doubled")
-for x in range(1,6):    
+for x in range(1,6):
     print (doubleIt(x),)
 
 
 
-#  File:       myFunctions.py 
+#  File:       myFunctions.py
 #  Purpose:    two programmer-defined functions
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1426,7 +1368,7 @@ def doubleIt ( z ):
 
 
 
-#  File:       06-05.py 
+#  File:       06-05.py
 #  Purpose:    Example: importing programmer-defined functions
 #              from its own module file
 #  Programmer: Anne Dawson
@@ -1444,7 +1386,7 @@ print()
 print()
 
 print ("1 to 5 doubled"    )
-for x in range(1,6):    
+for x in range(1,6):
     print (myFunctions.doubleIt(x),)
 
 
@@ -1456,7 +1398,7 @@ for x in range(1,6):
 
 
 
-#  File:       06-06.py 
+#  File:       06-06.py
 #  Purpose:    Example: function with no return statement
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1479,7 +1421,7 @@ times(2)
 
 
 
-#  File:       06-07.py 
+#  File:       06-07.py
 #  Purpose:    Example: a function with two return statements
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1507,7 +1449,7 @@ print (result)
 
 
 
-#  File:       06-08.py 
+#  File:       06-08.py
 #  Purpose:    Example: a function with no arguments
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1526,7 +1468,7 @@ greeting()
 
 
 
-#  File:       06-09.py 
+#  File:       06-09.py
 #  Purpose:    Example: a program with a Boolean function
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1537,12 +1479,12 @@ def isPositive(x):
         return 1 # 1 is true
     else:
         return 0 # 0 is false
-    
+
 x = float(input("Enter a positive or negative number: "))
 result = isPositive(x)
 print (result)
 print (isPositive(x))
-          
+
 
 
 
@@ -1624,9 +1566,9 @@ my_function(number)
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Sunday 29th October 2006, 12:48 PT                                                                    
-                                                                     
-                                                                     
-                                             
+
+
+
 '''
     Thanks to HW for the idea behind this program.
 
@@ -1659,7 +1601,7 @@ def pause():
 def quitMessage():
     print ("Thank you for using this program")
     print ("Goodbye")
-    
+
 def printThreeLines():
     for i in range(1,4):
         print ('this is line ' + str(i))
@@ -1671,10 +1613,10 @@ def printNineLines():
 def startMessage():
     print ("This program demonstrates the use of Python functions")
     pause()
-    
+
 def blank_Line():
     print()
-    
+
 def clearScreen():
     for i in range(1,26):
         blank_Line()
@@ -1716,7 +1658,7 @@ quitMessage()
 
 
 
-#  File:       07-01.py 
+#  File:       07-01.py
 #  Purpose:    Example: creating and using a Python list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1746,7 +1688,7 @@ print (result[7])
 
 
 
-#  File:       07-02.py 
+#  File:       07-02.py
 #  Purpose:    Example: creating and printing an empty list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1818,7 +1760,7 @@ print (list3[1])
 
 
 
-#  File:       07-05.py 
+#  File:       07-05.py
 #  Purpose:    Example: accessing the last item in a list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1835,7 +1777,7 @@ print (list1[-2])
 
 
 
-#  File:       07-06.py 
+#  File:       07-06.py
 #  Purpose:    Example: deleting items from a list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1851,7 +1793,7 @@ print (list1)
 
 
 
-#  File:       07-07.py 
+#  File:       07-07.py
 #  Purpose:    Example: repeating lists
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1872,7 +1814,7 @@ print (list1)
 
 
 
-#  File:       07-08.py 
+#  File:       07-08.py
 #  Purpose:    Example: concatenating lists
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1893,7 +1835,7 @@ print (list1)
 
 
 
-#  File:       07-09.py 
+#  File:       07-09.py
 #  Purpose:    Example: ist indexing
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -1908,13 +1850,13 @@ print (list1[0], list1[2])
 
 
 
-#  File:       07-10.py 
+#  File:       07-10.py
 #  Purpose:    Example: list indexing
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Thursday 4th November 2004, 7:08 PT
 
-list1 = [2,4,6,8,10,12,14,16,18,20] 
+list1 = [2,4,6,8,10,12,14,16,18,20]
 print (list1[0:1],list1[5:7])
 
 
@@ -1924,13 +1866,13 @@ print (list1[0:1],list1[5:7])
 
 
 
-#  File:       07-11.py 
+#  File:       07-11.py
 #  Purpose:    Example: finding the length of a list 
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Thursday 4th November 2004, 7:20 PT
 
-list1 = ["Anne","was",'here','testing',1,2,3] 
+list1 = ["Anne","was",'here','testing',1,2,3]
 list2 = [1,2,3,4]
 list3 = []
 print (len(list1), len(list2), len(list3))
@@ -1943,13 +1885,13 @@ print (len(list1), len(list2), len(list3))
 
 
 
-#  File:       07-12.py 
+#  File:       07-12.py
 #  Purpose:    Example: list iteration
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Thursday 4th November 2004, 7:26 PT
 
-list2 = [1,2,3,"Spam",4,5] 
+list2 = [1,2,3,"Spam",4,5]
 for i in list2:
     print (i, end=" ")
 
@@ -1962,13 +1904,13 @@ for i in list2:
 
 
 
-#  File:       07-13.py 
+#  File:       07-13.py
 #  Purpose:    Example: list membership
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Thursday 4th November 2004, 7:28 PT
 
-list2 = [1,2,3,"Spam",4,5] 
+list2 = [1,2,3,"Spam",4,5]
 print ("Spam" in list2)
 
 
@@ -1977,7 +1919,7 @@ print ("Spam" in list2)
 
 
 
-#  File:       07-14.py 
+#  File:       07-14.py
 #  Purpose:    Example: a selection of list methods
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2005,7 +1947,7 @@ print (list2)
 
 
 
-#  File:       07-15.py 
+#  File:       07-15.py
 #  Purpose:    Example: a 2D list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A
@@ -2041,7 +1983,7 @@ print (tictactoe[2])
 
 
 
-#  File:       07-16.py 
+#  File:       07-16.py
 #  Purpose:    Differences in range() with Python 2 and Python 3
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A
@@ -2083,7 +2025,7 @@ print(type(x))
 
 
 
-#  File:       08-01.py 
+#  File:       08-01.py
 #  Purpose:    Example: strings
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2104,7 +2046,7 @@ print ('''Anne was here
 
 
 
-#  File:       08-02.py 
+#  File:       08-02.py
 #  Purpose:    Example: using an apostrophe within a string
 #              and using double quote marks within a string
 #  Programmer: Anne Dawson
@@ -2124,7 +2066,7 @@ print ('Here is a double quote ", and "more"')
 
 
 
-#  File:       08-03.py 
+#  File:       08-03.py
 #  Purpose:    Example: multiplying numbers and
 #                       multiplying strings
 #  Programmer: Anne Dawson
@@ -2142,7 +2084,7 @@ print ("30" * 4)
 
 
 
-#  File:       08-04.py 
+#  File:       08-04.py
 #  Purpose:    Example: string concatenation
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2159,13 +2101,13 @@ print ("Anne " + "was " + ("here " * 3))
 
 
 
-#  File:       08-05.py 
+#  File:       08-05.py
 #  Purpose:    Example: string indexing
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 1st November 2004, 7:01 PT
 
-s1 = "Anne Dawson" 
+s1 = "Anne Dawson"
 print (s1[0],s1[5])
 
 
@@ -2175,13 +2117,13 @@ print (s1[0],s1[5])
 
 
 
-#  File:       08-06.py 
+#  File:       08-06.py
 #  Purpose:    Example: string slicing
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 1st November 2004, 7:07 PT
 
-s1 = "Anne Dawson" 
+s1 = "Anne Dawson"
 print (s1[0:1],s1[5:7])
 print (s1[6:9])
 
@@ -2194,18 +2136,18 @@ print (s1[6:9])
 
 
 
-#  File:       08-07.py 
+#  File:       08-07.py
 #  Purpose:    Example: finding the length of a string
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 1st November 2004, 7:10 PT
 
 
-s1 = "Anne" 
+s1 = "Anne"
 s2 = "Dawson"
 s3 = ""
-print (len(s1),end=" ") 
-print (len(s2),end=" ") 
+print (len(s1),end=" ")
+print (len(s2),end=" ")
 print (len(s3))
 
 
@@ -2217,7 +2159,7 @@ print (len(s3))
 
 
 
-#  File:       08-08.py 
+#  File:       08-08.py
 #  Purpose:    Example: the %s string formatting code
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2233,7 +2175,7 @@ print ('Python is a %s language.' % 'great')
 
 
 
-#  File:       08-09.py 
+#  File:       08-09.py
 #  Purpose:    Example: finding a string within a string
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2250,7 +2192,7 @@ print (x)
 
 
 
-#  File:       08-10.py 
+#  File:       08-10.py
 #  Purpose:    Example: finding a string within a string
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2272,7 +2214,7 @@ print (s2)
 
 
 
-#  File:       08-11.py 
+#  File:       08-11.py
 #  Purpose:    Example: escape sequences within a string 
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2288,7 +2230,7 @@ print (s)
 
 
 
-#  File:       08-12.py 
+#  File:       08-12.py
 #  Purpose:    Example: an escape sequence counts as one character
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2307,7 +2249,7 @@ print (len(s))
 
 
 
-#  File:       08-13.py 
+#  File:       08-13.py
 #  Purpose:    Example: iteration and membership with strings
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2375,7 +2317,7 @@ print (str1)
 
 
 
-#  File:       09-01.py 
+#  File:       09-01.py
 #  Purpose:    Example: a program which uses a file
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2396,7 +2338,7 @@ print (string)
 
 
 
-#  File:       09-02.py 
+#  File:       09-02.py
 #  Purpose:    Example: a program which uses a file
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2404,7 +2346,7 @@ print (string)
 
 file1 = open("C:\\temp\\tester2.txt","w")
 print (file1) # prints out details about the file
-file1.write("Today is Monday\n") 
+file1.write("Today is Monday\n")
 file1.write("Tomorrow is Tuesday")
 file1.close()
 
@@ -2417,7 +2359,7 @@ file1.close()
 
 
 
-#  File:       09-03.py 
+#  File:       09-03.py
 #  Purpose:    Example: a program which uses a file
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2450,23 +2392,23 @@ file2.close()
 
 
 
-#  File:       09-04.py 
+#  File:       09-04.py
 #  Purpose:    Example: a program which uses a file
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 7th March 2005, 11:31 PT
 
-def copyFile(oldFile, newFile): 
-  f1 = open(oldFile, "r") 
-  f2 = open(newFile, "w") 
-  while 1: 
-    text = f1.read(50) 
-    if text == "": 
-      break 
-    f2.write(text) 
-  f1.close() 
-  f2.close() 
-  return 
+def copyFile(oldFile, newFile):
+  f1 = open(oldFile, "r")
+  f2 = open(newFile, "w")
+  while 1:
+    text = f1.read(50)
+    if text == "":
+      break
+    f2.write(text)
+  f1.close()
+  f2.close()
+  return
 
 filecopy = "C:\\temp\\tester2copy.txt" #this file will be created
 fileold = "C:\\temp\\tester2.txt" # existing file
@@ -2483,16 +2425,16 @@ copyFile(fileold, filecopy)
 
 
 
-#  File:       09-05.py 
+#  File:       09-05.py
 #  Purpose:    Example: a program which uses a file
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 7th March 2005, 11:31 PT
 
-filename = input('Enter a file name: ') 
-try: 
-  f = open (filename, "r") 
-except: 
+filename = input('Enter a file name: ')
+try:
+  f = open (filename, "r")
+except:
   print ('There is no file named', filename )
 
 
@@ -2513,7 +2455,7 @@ except:
 
 
 
-#  File:       10-01.py 
+#  File:       10-01.py
 #  Purpose:    Example: sequential search of a list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2543,7 +2485,7 @@ if found == 0:
 
 
 
-#  File:       10-02.py 
+#  File:       10-02.py
 #  Purpose:    Example: sequential search of a list
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
@@ -2575,7 +2517,7 @@ else:
 
 
 
-#  File:       bubblesort.py 
+#  File:       bubblesort.py
 #  Purpose:    Example: a program which demonstrates a bubble sort on
 #              a list of 10 random integers
 #  Programmer: Anne Dawson
@@ -2618,17 +2560,17 @@ print ("After :", numbers)
 
 
 
-#  File:       12-01.py 
+#  File:       12-01.py
 #  Purpose:    Example: a recursive function
 #  Programmer: Anne Dawson
 #  Course:     CSCI120A, CSCI165
 #  Date:       Thursday 11th November 2004, 14:25 PT
 
-def factorial(n): 
-  if n == 0: 
-    return 1 
-  else: 
-    return n * factorial(n-1) 
+def factorial(n):
+  if n == 0:
+    return 1
+  else:
+    return n * factorial(n-1)
 
 print (" 5! has a value of: ",)
 result = factorial(5)
@@ -2707,7 +2649,7 @@ class Person():
 
     def getLastname(self):    # accessor method
         '''Returns the instance variable _lastname. '''
-        return self._lastname 
+        return self._lastname
 
 print(Person.__doc__) # prints the docstring for the class
 person1 = Person("Anne","Dawson")
@@ -2766,7 +2708,7 @@ class Person():
     def setLastname(self,newLastname):    # mutator method
         '''Assign a value to the instance variable _lastname. '''
         self._lastname = newLastname
- 
+
 
 print(Person.__doc__) # prints the docstring for the class
 person1 = Person("Anne","Dawson")
@@ -2849,7 +2791,7 @@ print(person1.reverseName())
 
 
 
-#  File:       13-05.py 
+#  File:       13-05.py
 #  Purpose:    OOP Example: Student class inherits from Person class
 #  Programmer: Anne Dawson
 #  Course:     CSCI120
@@ -2921,7 +2863,7 @@ class Student(Person):
         '''Reverses the full name   '''
         return self._lastname + " " + self._firstname + " " + str(self._GPA)
 
-    
+
 print(Student.__doc__) # prints the docstring for the class
 student1 = Student("Carol","Wong")
 student2 = Student("Bill","Wang")
