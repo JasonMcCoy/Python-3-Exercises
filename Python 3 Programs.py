@@ -316,9 +316,9 @@ print(number1, type(number1))
 #  Date:       Monday 27th September 2004, 12:46 PT
 
 number1 = input("Enter first number:\n")
-print (number1, type(number1))
+print(number1, type(number1))
 number1 = int(number1)
-print (number1, type(number1))
+print(number1, type(number1))
 
 
 
@@ -331,9 +331,9 @@ print (number1, type(number1))
 #  Date:       Monday 27th September 2004, 12:48 PT
 
 number1 = input("Enter first number:\n")
-print (number1, type(number1), id(number1))
+print(number1, type(number1), id(number1))
 number1 = int(number1)
-print (number1, type(number1), id(number1))
+print(number1, type(number1), id(number1))
 
 
 
@@ -346,14 +346,14 @@ print (number1, type(number1), id(number1))
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 27th September 2004, 13:09 PT
 
-print (2 + 4)
-print (6 - 4)
-print (6 * 3)
-print (6 / 3)
-print (6 % 3)
-print (6 // 3) # floor (integer) division: always truncates fractional remainders
-print (-5)
-print (3**2)   # three to the power of 2
+print(2 + 4)
+print(6 - 4)
+print(6 * 3)
+print(6 / 3)
+print(6 % 3)
+print(6 // 3) # floor (integer) division: always truncates fractional remainders
+print(-5)
+print(3**2)   # three to the power of 2
 
 
 
@@ -367,14 +367,14 @@ print (3**2)   # three to the power of 2
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 27th September 2004, 13:10 PT
 
-print (2.0 + 4.0)
-print (6.0 - 4.0)
-print (6.0 * 3.0)
-print (6.0 / 3.0)
-print (6.0 % 3.0)
-print (6.0 // 3.0) # floor (integer) division: always truncates fractional remainders
-print (-5.0)
-print (3.0**2.0)   # three to the power of 2
+print(2.0 + 4.0)
+print(6.0 - 4.0)
+print(6.0 * 3.0)
+print(6.0 / 3.0)
+print(6.0 % 3.0)
+print(6.0 // 3.0) # floor (integer) division: always truncates fractional remainders
+print(-5.0)
+print(3.0**2.0)   # three to the power of 2
 
 
 
@@ -394,14 +394,14 @@ print (3.0**2.0)   # three to the power of 2
 # converted up means to take the data type with the greater storage
 # float has greater storage (8 bytes) than a regular int (4 bytes)
 
-print (2 + 4.0)
-print (6 - 4.0)
-print (6 * 3.0)
-print (6 / 3.0)
-print (6 % 3.0)
-print (6 // 3.0) # floor division: always truncates fractional remainders
-print (-5.0)
-print (3**2.0)   # three to the power of 2
+print(2 + 4.0)
+print(6 - 4.0)
+print(6 * 3.0)
+print(6 / 3.0)
+print(6 % 3.0)
+print(6 // 3.0) # floor division: always truncates fractional remainders
+print(-5.0)
+print(3**2.0)   # three to the power of 2
 
 
 
@@ -422,12 +422,12 @@ print (3**2.0)   # three to the power of 2
 #  but outputs 'true' or 'false' from print statements
 #  If you input Boolean values, you must input 1 or 0.
 
-print (7 > 10)
-print (4 < 16)
-print (4 == 4)
-print (4 <= 4)
-print (4 >= 4)
-print (4 != 4)
+print(7 > 10)
+print(4 < 16)
+print(4 == 4)
+print(4 <= 4)
+print(4 >= 4)
+print(4 != 4)
 
 
 
@@ -441,8 +441,9 @@ print (4 != 4)
 #  Date:       Monday 27th September 2004, 12:54 PT
 
 number = 10
+
 isPositive = (number > 0)
-print (isPositive)
+print(isPositive)
 
 
 
@@ -460,7 +461,8 @@ print (isPositive)
 
 age = 25
 salary = 55000
-print ((age > 21) and (salary > 50000))
+
+print((age > 21) and (salary > 50000))
 
 
 
@@ -480,11 +482,12 @@ print ((age > 21) and (salary > 50000))
 #  In this example, if x has a value equal to 'spam',
 #  then 'Hi spam' will be printed.
 
-x = 'spam'
-if x == 'spam':
-    print ('Hi spam')
+x = "spam"
+
+if x == "spam":
+    print("Hi spam")
 else:
-    print ('not spam')
+    print("not spam")
 
 # Notice the indentation (spacing out) of this code.
 # The statement(s) following the if condition (i.e. boolean expression)
@@ -513,13 +516,14 @@ else:
 #  followed by 'Have a nice day!'
 
 
-x = 'spam'
-if x == 'spam':
-    print ('Hi spam\n')
-    print ("Nice weather we're having")
-    print ('Have a nice day!')
+x = "spam"
+
+if x == "spam":
+    print("Hi spam\n")
+    print("Nice weather we're having")
+    print("Have a nice day!")
 else:
-    print ('not spam')
+    print("not spam")
 
 # Notice the indentation (spacing out) of this code.
 # The statement(s) following the if condition (i.e. boolean expression)
@@ -550,14 +554,15 @@ else:
 #  "Nice weather we're having"
 #  followed by 'Have a nice day!'
 
-x = 'spam'
-if x == 'spammy':
-    print ('Hi spam\n')
-    print ("Nice weather we're having")
-    print ('Have a nice day!')
+x = "spam"
+
+if x == "spammy":
+    print("Hi spam\n")
+    print("Nice weather we're having")
+    print("Have a nice day!")
 else:
-    print ('not spam')
-    print ('Not having a good day?')
+    print("not spam")
+    print("Not having a good day?")
 
 # Notice the indentation (spacing out) of this code.
 # The statement(s) following the if condition (i.e. boolean expression)
@@ -583,14 +588,15 @@ else:
 
 score = input("Enter score: ")
 score = int(score)
-if score >= 80:
-    grade = 'A'
+
+if score >= 90:
+    grade = "A"
 else:
-    if score >= 70:
-        grade = 'B'
+    if score >= 80:
+        grade = "B"
     else:
-        grade = 'C'
-print ("\n\nGrade is: " + grade)
+        grade = "C"
+print("\n\nGrade is: " + grade)
 
 
 
@@ -611,20 +617,21 @@ print ("\n\nGrade is: " + grade)
 
 score = input("Enter score: ")
 score = int(score)
-if score >= 80:
-    grade = 'A'
+
+if score >= 90:
+    grade = "A"
 else:
-    if score >= 70:
-        grade = 'B'
+    if score >= 80:
+        grade = "B"
     else:
-        if score >= 55:
-            grade = 'C'
+        if score >= 70:
+            grade = "C"
         else:
             if score >= 50:
-                grade = 'Pass'
+                grade = "Pass"
             else:
-                 grade = 'Fail'
-print ("\n\nGrade is: " + grade)
+                 grade = "Fail"
+print("\n\nGrade is: " + grade)
 
 
 
@@ -641,17 +648,18 @@ print ("\n\nGrade is: " + grade)
 
 score = input("Enter score: ")
 score = int(score)
-if score > 80 or score == 80:
-    grade = 'A'
+
+if score > 90 or score == 90:
+    grade = "A"
+elif score > 80 or score == 80:
+    grade = "B"
 elif score > 70 or score == 70:
-    grade = 'B'
-elif score > 55 or score == 55:
-    grade = 'C'
+    grade = "C"
 elif score > 50 or score == 50:
-    grade = 'Pass'
+    grade = "Pass"
 else:
-    grade = 'Fail'
-print ("\n\nGrade is: " + grade)
+    grade = "Fail"
+print("\n\nGrade is: " + grade)
 
 
 
@@ -667,17 +675,18 @@ print ("\n\nGrade is: " + grade)
 
 score = input("Enter score: ")
 score = int(score)
-if score >= 80:
+
+if score >= 90:
     grade = 'A'
-elif score >= 70:
+elif score >= 80:
     grade = 'B'
-elif score >= 55:
+elif score >= 70:
     grade = 'C'
 elif score >= 50:
     grade = 'Pass'
 else:
     grade = 'Fail'
-print ("\n\nGrade is: " + grade)
+print("\n\nGrade is: " + grade)
 
 
 
@@ -702,8 +711,9 @@ print ("\n\nGrade is: " + grade)
 
 x = int(input("Enter a value for x: "))
 y = int(input("Enter a value for y: "))
-print ((not(x < 15 and y >= 3)))
-print ((x >= 15 or y < 3))
+
+print((not(x < 15 and y >= 3))) # The not keyword can also be used to inverse a boolean type.
+print((x >= 15 or y < 3))
 
 
 
@@ -720,32 +730,33 @@ print ((x >= 15 or y < 3))
 age = input("Enter your age: ")
 age = int(age)
 have_own_car = input("Do you own your own car (y/n): ")
+#have_own_car = str(have_own_car)
 
 if (age > 21) and (have_own_car == 'y'):
-    print ("You are over 21 years old and own your own car")
+    print("You are over 21 years old and own your own car")
 
 if (age > 21) and (have_own_car == 'n'):
-    print ("You are over 21 years old and you do NOT own your own car")
+    print("You are over 21 years old and you do NOT own your own car")
 
 if (age == 21) and (have_own_car == 'y'):
-    print ("You are 21 years old and you own your own car")
+    print("You are 21 years old and you own your own car")
 
 if (age == 21) and (have_own_car == 'n'):
-    print ("You are 21 years old and you DO NOT own your own car"    )
+    print("You are 21 years old and you DO NOT own your own car")
 
 if (age < 21) and (have_own_car == 'y'):
-    print ("You are younger than 21 and you own your own car")
+    print("You are younger than 21 and you own your own car")
 
 if (age < 21) and (have_own_car == 'n'):
-    print ("You are younger than 21 and you DO NOT own your own car"    )
+    print("You are younger than 21 and you DO NOT own your own car")
 
 
 salary = float(input("Enter your annual salary, (e.g. 50000): "))
 
 if (salary > 50000) or (age > 21):
-    print ("you can join our club because you earn more than $50000 OR you are over 21 (or both)")
+    print("you can join our club because you earn more than $50000 OR you are over 21 (or both)")
 else:
-    print ("you need to be earning more than 50000 OR be over 21 (or both) to join our club")
+    print("you need to be earning more than 50000 OR be over 21 (or both) to join our club")
 
 
 
@@ -773,10 +784,11 @@ else:
 #  'counter-controlled'. In this program, x is acting as a counter.
 
 x = 1
+
 while x < 5:
-    print ('Hi spam')
-    x = x + 1
-print ('done')
+    print("Hi spam")
+    x += 1
+print("done")
 
 
 
@@ -797,12 +809,13 @@ print ('done')
 #  You may repeat one statement or multiple statements.
 
 x = 1
+
 while x < 5:
-    print ('Hi spam')
-    x = x + 1
-    print ('I love spam')
-print ('done')
-print ('gone')
+    print("Hi spam")
+    x += 1
+    print("I love spam")
+print("done")
+print("gone")
 
 
 
@@ -822,14 +835,16 @@ print ('gone')
 #  Press Ctrl-C to interrupt this program run.
 
 x = 1
+
 while x:
-    print ('Hi spam')
-    x = x + 1
-    print ('I love spam')
-    print ('Press the Ctrl key and the C key together')
-    print ('to interrupt this program...')
-print ('done')
-print ('gone')
+    print("Hi spam")
+    x += 1
+
+    print("I love spam")
+    print("Press the Ctrl key and the C key together")
+    print("to interrupt this program...")
+print("done")
+print("gone")
 
 
 
@@ -850,11 +865,11 @@ print ('gone')
 
 
 while 1:
-    print ('Anyone for spam? ')
-    print ('Press the Ctrl key and the C key together')
-    print ('to interrupt this program...')
-print ('done')
-print ('gone')
+    print("Anyone for spam?")
+    print("Press the Ctrl key and the C key together")
+    print("to interrupt this program...")
+print("done")
+print("gone")
 
 
 
@@ -872,13 +887,12 @@ print ('gone')
 
 
 while 1:
-    print ('Spam')
-    answer = input('Press y to end this loop')
-    if answer == 'y':
-        print ('Fries with that?')
+    answer = input("Press y to end this loop.")
+
+    if answer == "y":
         break
-print ('Have a ')
-print ('nice day!')
+print("Have a ")
+print("nice day!")
 
 
 
@@ -896,16 +910,17 @@ print ('nice day!')
 
 
 while 1:
-    print ('Spam')
-    answer = input('Press y for large fries ')
-    if answer == 'y':
-        print ('Large fries with spam, mmmm, yummy ')
+    answer = input("Press y for large fries.")
+
+    if answer == "y":
         continue
-    answer = input('Had enough yet? ')
-    if answer == 'y':
+
+    answer = input("Had enough yet? ")
+
+    if answer == "y":
         break
-print ('Have a ')
-print ('nice day!')
+print("Have a ")
+print("nice day!")
 
 
 
@@ -929,21 +944,22 @@ totalScore = 0     # sum of scores
 numberScores = 0   # number of scores entered
 
 # processing phase
-score = input( "Enter score, (Enter -9 to end): " )   # get one score
-score = int( score )   # convert string to an integer
+score = input("Enter score, (Enter -9 to end):")   # get one score
+score = int(score)   # convert string to an integer
 
 while score != -9: # -9 is used as a sentinel ( a lookout or sentry value )
-    totalScore = totalScore + score
-    numberScores = numberScores + 1
-    score = input( "Enter score, (Enter -9 to end): " )
-    score = int( score )
+    totalScore += score
+    numberScores += 1
+    score = input("Enter score, (Enter -9 to end):")
+    score = int(score)
 
 # termination phase
 if numberScores != 0: # division by zero would be a run-time error
-   average = float( totalScore ) / numberScores
-   print ("Class average is", average)
+   average = float(totalScore) / numberScores
+
+   print("Class average is", average)
 else:
-   print ("No scores were entered")
+   print("No scores were entered.")
 
 
 
