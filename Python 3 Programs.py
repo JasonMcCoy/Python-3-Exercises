@@ -1013,7 +1013,8 @@ print(math.sqrt(x))
 import math
 
 square_root_prompt = int(input("Type in a number to get the square root:"))
-print(math.sqrt(square_root_prompt))
+print("The square root of %d is: " % square_root_prompt)
+print((math.sqrt(square_root_prompt)))
 
 
 #  File:       06-02B.py
@@ -1026,7 +1027,7 @@ def greeting():
     print("Hello")
 
 
-def many_greetings(n):
+def many_greetings():
     for i in range(n):
         print("Hello Again!")
 
@@ -1037,8 +1038,7 @@ def many_greetings_with_name(n, the_name):
 
 
 greeting()
-greeting()
-greeting()
+
 
 print()  # prints a blank line
 
@@ -1063,8 +1063,9 @@ many_greetings_with_name(x, " Anne")
 
 # start of function definition
 def cube(y):
-    return y * y * y
-
+    return y ** 3
+type_in_here = int(input("Type in a number to get it cubed:"))
+print(cube(type_in_here))
 
 # end of function definition
 
@@ -1083,7 +1084,7 @@ print("last value of x is:", x)
 #  Date:       Monday 11th October 2004, 8:45 PT
 
 def cube(y):
-    return y * y * y
+    return y ** 3
 
 
 def doubleIt(z):
@@ -1108,7 +1109,7 @@ for x in range(1, 6):
 #  Date:       Monday 11th October 2004, 8:57 PT
 
 def cube(y):
-    return y * y * y
+    return y ** 3
 
 
 def doubleIt(z):
@@ -1145,7 +1146,7 @@ for x in range(1, 6):
 
 def times(x):
     for i in range(1, 11):
-        print("%d x %d = %d" % (i, x, i * x))
+        print("%d x %d = %d" % (x, i, i * x))
 
 
 print("This is the 1 times tables:")
