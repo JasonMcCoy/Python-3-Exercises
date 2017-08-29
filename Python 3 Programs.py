@@ -1167,15 +1167,12 @@ def division(x, y):
         print("division by zero not allowed")
         return
     else:
-        print(" returning %f divided by %f " % (x, y))
+        print("%f divided by %f" % (x, y))
         return x / y
 
-
-print(" 5.0 / 2  returns:")
 result = division(5.0, 2)
 print(result)
 
-print(" 5.0 / 0  returns:")
 result = division(5.0, 0)
 print(result)
 
@@ -1209,8 +1206,8 @@ def isPositive(x):
 
 
 x = float(input("Enter a positive or negative number: "))
-result = isPositive(x)
-print(result)
+#result = isPositive(x)
+#print(result)
 print(isPositive(x))
 
 
@@ -1265,8 +1262,10 @@ def my_function(n):
 
 number = 10
 print("number in main program: ", number)
-my_function(number)
-# print(n)
+
+n = 1
+my_function(n)
+print(n)
 
 # Uncomment the line above and try to run.
 # You will get an error, because....
@@ -1373,18 +1372,33 @@ quitMessage()
 
 result = [0, 0, 0, 0, 0, 0, 0, 0]
 print(result)
+
 result[0] = 75
+#[75, 0, 0, 0, 0, 0, 0, 0]
 result[1] = 90
+#[75, 90, 0, 0, 0, 0, 0, 0]
 result[4] = 72
+#[75, 90, 0, 0, 72, 0, 0, 0]
+
 print(result)
+#[75, 90, 0, 0, 72, 0, 0, 0]
+
 print(result[0])
+#75
 print(result[1])
+#90
 print(result[2])
+#0
 print(result[3])
+#0
 print(result[4])
+#72
 print(result[5])
+#0
 print(result[6])
+#0
 print(result[7])
+#0
 
 #  File:       07-02.py
 #  Purpose:    Example: creating and printing an empty list
@@ -1418,8 +1432,10 @@ print(list1)
 
 list1 = []
 print(list1)
+
 list1.append(67)
 print(list1[0])
+
 list1.append("spam")
 print(list1)
 print(list1[0])
@@ -1444,8 +1460,10 @@ print(list1[1])
 
 list1 = [1, 2, 3]
 print(list1)
+
 list2 = [4, 5, 6]
 print(list2)
+
 list3 = [list1, list2]
 print(list3)
 print(list3[0])
@@ -1472,6 +1490,7 @@ print(list1[-2])
 
 list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(list1)
+
 del list1[0]
 del list1[-1]
 print(list1)
@@ -1486,7 +1505,8 @@ list1 = [1, 2, 3]
 print(list1)
 print(list1 * 3)
 print(list1)
-list1 = list1 * 2
+
+list1 *= 2
 print(list1)
 
 #  File:       07-08.py
@@ -1497,11 +1517,14 @@ print(list1)
 
 list1 = [1, 2, 3]
 print(list1)
+
 list2 = [4, 5, 6]
 print(list2)
-list1 = list1 + list2
+
+list1 += list2
 print(list1)
-list1 = list1 + list1
+
+list1 += list1
 print(list1)
 
 #  File:       07-09.py
