@@ -1583,18 +1583,25 @@ print("Spam" in list2)
 
 list2 = ["B", "C", "A"]
 print(list2)
+
 list2.extend(["X", "Y"])  # extends the list
 print(list2)
+
 list2.pop()  # removes last item from the list
 print(list2)
+
 list2.pop()
 print(list2)
+
 list2.reverse()  # reverses the order of the items in the list
 print(list2)
+
 list2.append("S")
 print(list2)
+
 list2.sort()  # sorts the list into ascending order
 print(list2)
+
 list2.reverse()  # reverses the order of the items in the list
 print(list2)
 
