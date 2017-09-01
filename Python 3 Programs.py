@@ -1585,7 +1585,7 @@ list2 = ["B", "C", "A"]
 print(list2)
 
 list2.extend(["X", "Y"])  # extends the list
-print(list2)
+print(list2)  # ["B", "C", "A", "X", "Y"]
 
 list2.pop()  # removes last item from the list
 print(list2)
@@ -1599,10 +1599,10 @@ print(list2)
 list2.append("S")
 print(list2)
 
-list2.sort()  # sorts the list into ascending order
+list2.reverse()  # reverses the order of the items in the list
 print(list2)
 
-list2.reverse()  # reverses the order of the items in the list
+list2.sort()  # sorts the list into ascending order
 print(list2)
 
 #  File:       07-15.py
@@ -1837,9 +1837,11 @@ print('x' in s)
 # For character charts go to:
 # http://www.unicode.org/charts/
 # http://www.unicode.org/charts/PDF/U2580.pdf (Block Elements)
-# \u2588 is a Full Block which can be used to build up a black square 
+# \u2588 is a Full Block which can be used to build up a black square
+
 str1 = "Hello\u2588out there"  # solid black block within text
 print(str1)
+
 str1 = '\u2588\u2588'  # two full block characters
 print(str1)
 print()
@@ -1851,14 +1853,17 @@ print()
 print()
 # Note: a space is \u0020
 print('two lines of two full blocks, two spaces, two full blocks:')
+
 str1 = '\u2588\u2588\u2588\u2588\u0020\u0020\u0020\u0020\u2588\u2588\u2588\u2588'
 print(str1)
 print(str1)
 print()
 print()
 print('two lines of two full blocks, the number 17 and two full blocks:')
+
 str1 = '\u2588\u2588\u2588\u2588\u0020\u0020' + '17' + '\u2588\u2588\u2588\u2588'
 print(str1)
+
 str1 = '\u2588\u2588\u2588\u2588\u0020\u0020\u0020\u0020\u2588\u2588\u2588\u2588'
 print(str1)
 
@@ -1879,7 +1884,7 @@ print(string)
 #  Course:     CSCI120A, CSCI165
 #  Date:       Monday 7th March 2005, 10:38 PT
 
-file1 = open("C:\\temp\\tester2.txt", "w")
+file1 = open("C:\\Users\\User\Desktop\\New Text Document2", "w")
 print(file1)  # prints out details about the file
 file1.write("Today is Monday\n")
 file1.write("Tomorrow is Tuesday")
