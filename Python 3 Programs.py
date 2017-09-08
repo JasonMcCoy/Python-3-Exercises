@@ -1898,16 +1898,21 @@ file1.close()
 
 file2 = open("C:\\temp\\tester2.txt", "r")
 print(file2)  # prints out details about the file
+
 string1 = file2.read()
 print(string1)
+
 file2.close()
 file2 = open("C:\\temp\\tester2.txt", "r")
 string1 = file2.read(5)
 print(string1)
+
 string1 = file2.read(5)
 print(string1)
+
 string1 = file2.read(5)
 print(string1)
+
 file2.close()
 
 
@@ -1956,6 +1961,7 @@ except:
 list1 = [11, 27, 36, 44, 51, 22, 65, 1, 78]
 numbertofind = int(input("Enter a number\n"))
 found = 0
+
 for i in list1:
     if numbertofind == i:
         print(numbertofind, " at index: ", list1.index(numbertofind))
@@ -1972,6 +1978,7 @@ if found == 0:
 mylist = [10, 11, 3, 4, 55, 12, 23, 14, 16]
 n = len(mylist)
 print(n)
+
 for i in range(n):
     print(mylist[i], end=" ")
 search = int(input("\nPlease enter a number to search for: "))
@@ -2000,6 +2007,7 @@ import random
 # define the bubble sort function
 def sort(values):
     length = len(values)
+
     for time in range(0, length - 1):
         for position in range(0, (length - time - 1)):
             if values[position] > values[position + 1]:
@@ -2011,6 +2019,7 @@ def sort(values):
 # generate a list of ten random numbers
 numbers = []
 number = 0
+
 while number < 10:
     value = random.randint(1, 100)
     if not (value in numbers):
@@ -2054,8 +2063,8 @@ print(result)
 #  References: http://www.annedawson.net/Python3_Intro_OOP.odp
 #              http://www.annedawson.net/Python3_Prog_OOP.odp
 
-class Person():
-    '''Instantiates a Person object with given name. '''
+class Person:
+    'Instantiates a Person object with given name.'
 
     def __init__(self, first_name, last_name):
         '''Initializes private instance variables _firstname and _lastname. '''
@@ -2068,8 +2077,10 @@ class Person():
 
 
 print(Person.__doc__)  # prints the docstring for the class
+
 person1 = Person("Anne", "Dawson")
 person2 = Person("Tom", "Lee")
+
 print(person1)
 print(person2)
 
@@ -2082,7 +2093,7 @@ print(person2)
 #  References: http://www.annedawson.net/Python3_Intro_OOP.odp
 #              http://www.annedawson.net/Python3_Prog_OOP.odp
 
-class Person():
+class Person:
     '''Instantiates a Person object with given name. '''
 
     def __init__(self, first_name, last_name):
@@ -2155,6 +2166,7 @@ class Person():
 print(Person.__doc__)  # prints the docstring for the class
 person1 = Person("Anne", "Dawson")
 person2 = Person("Tom", "Lee")
+
 print(person1)  # calls the __str__ method implicitly on person1 object
 print(person2)  # calls the __str__ method implicitly on person2 object
 print(Person.getFirstname.__doc__)  # prints the docstring for the getFirstname method
@@ -2162,7 +2174,9 @@ print(person1.getFirstname())
 print(person1.getLastname())
 print(person2.getFirstname())
 print(person2.getLastname())
+
 person1.setFirstname("Annie")
+
 print(person1.getFirstname())
 
 
